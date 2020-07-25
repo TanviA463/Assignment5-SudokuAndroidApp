@@ -15,12 +15,13 @@
         android:layout_height="68dp"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:gravity="center_vertical"
-        android:text="  Easy"
+        android:text="Easy"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/ValidateAnswerKey"
@@ -35,6 +36,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <TextView
+        android:id="@+id/dialogBox"
+        android:layout_width="418dp"
+        android:layout_height="149dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Press 'Check' to check your answers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/num11"
         android:layout_width="50dp"
@@ -47,13 +74,13 @@
         android:background="#D3D3D3"
         android:inputType="number"
         android:text="3"
-        android:editable="false"
         android:textAlignment="center"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -81,11 +108,11 @@
         android:inputType="number"
         android:text="4"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num14"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -131,11 +158,11 @@
         android:inputType="number"
         android:text="1"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num23"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -164,11 +191,11 @@
         android:inputType="number"
         android:text="2"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated,MissingPrefix"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -199,11 +226,11 @@
         android:inputType="number"
         android:text="4"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num33"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:layout_marginEnd="17dp"
         android:gravity="center_horizontal" />
 
@@ -233,11 +260,11 @@
         android:inputType="number"
         android:text="3"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -253,12 +280,12 @@
         android:inputType="number"
         android:text="2"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -286,11 +313,11 @@
         android:inputType="number"
         android:text="1"
         android:textAlignment="center"
-        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toStartOf="@+id/num44"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="Deprecated"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -307,19 +334,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         android:gravity="center_horizontal" />
-
-    <TextView
-        android:id="@+id/dialogBox"
-        android:layout_width="418dp"
-        android:layout_height="149dp"
-        android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"
-        android:text="Press 'Check' to check your answers"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
